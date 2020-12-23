@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4>Recipes</h4>
+
+
+<body>
+
+<div id="carrusel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-pic active" data-interval="10000">
+        <image  src="{{ url_for('static', filename='images/banana_pancake.jpg')}}"alt="Banana Pancakes>
+      </div>
+      <div class="carousel-pic" data-interval="2000">
+        <image  src="{{ url_for('static', filename='images/chocolate_cake.jpg')}}"alt="Chocolate Cake>
+      </div>
+      <div class="carousel-pic">
+        <image  src="{{ url_for('static', filename='images/spinach_pancake.jpg')}}"alt="Spinach Pancakes>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="column">
+  <p class="span">
+
+These are my classic banana-oats protein pancakes. Where do the protein come from? Mainly egg whites and 1/2 scoop of whey protein. “...we don’t care about the protein, what’s that purple thing on top?” I am glad you asked! I am a tahini addict, but it doesn’t go well with pancakes. I am a bit crazy, yet that’s just way too much. I grabbed a handful of fresh blueberries and put them on a small bowl with about 2 table spoons of water, heat them at for 30 seconds and I got a colorful syrup. Since I wanted this to be a nice-looking picture, I needed the natural blueberry syrup to be dense - creamy- and that’s when tahini (which is none other than grounded sesame seeds made as a sesame butter, but with a fancy name) come to play!</p>
+
+</p>
+
+</div>
+</body>
+{% endblock %}
+
+
+{% block prueba %}
+{% endblock %}
+
+
